@@ -1,0 +1,58 @@
+Date,xid,pid,title,process,timeactive,
+2019-09-04 21:42:18.154081,0x3600006,18593,akshay@akshay-HP-Pavilion-Laptop-15-cc1xx: ~,gnome-terminal-,
+2019-09-04 21:43:11.141062,0x3600006,18593,akshay@akshay-HP-Pavilion-Laptop-15-cc1xx: ~,gnome-terminal-,
+2019-09-04 21:47:47.071012,0x3800001,19051,test.py - productivity - Visual Studio Code,code,9356692
+2019-09-04 21:50:10.857600,0x3800001,19051,test.py - productivity - Visual Studio Code,code,9500485
+2019-09-04 21:50:29.705948,0x3800001,19051,test.py - productivity - Visual Studio Code,code,9519345
+2019-09-04 21:52:19.734041,0x3800001,19051,test.py - productivity - Visual Studio Code,code,9629371
+2019-09-05 00:07:01.933731,0x2c0001a,9748,New Tab - Google Chrome,chrome,16186568
+2019-09-05 00:08:01.070677,0x3800001,19051,test.py - productivity - Visual Studio Code,code,16010224
+2019-09-05 00:09:01.141019,0x2c0001a,9748,New Tab - Google Chrome,chrome,16332706
+2019-09-05 00:10:01.373725,0x4400003,22771,Reminder: Applications for FY representatives - codecell.engg@somaiya.edu - Somaiya Vidyavihar Mail - Mozilla Firefox,firefox,
+2019-09-05 00:11:01.517206,0x4400003,22771,Gradient text color - Mozilla Firefox,firefox,
+2019-09-05 00:12:01.591695,0x4400003,22771,Gradient text color - Mozilla Firefox,firefox,
+2019-09-05 00:13:01.667852,0x4400003,22771,CodeCell FY Rep Application - Google Forms - Mozilla Firefox,firefox,
+2019-09-05 00:14:01.928305,0x4400003,22771,CodeCell FY Rep Application - Google Forms - Mozilla Firefox,firefox,
+2019-09-05 00:15:01.997483,0x4400003,22771,CodeCell FY Rep Application - Google Forms - Mozilla Firefox,firefox,
+2019-09-05 00:16:01.063080,0x4400003,22771,Mozilla Firefox,firefox,
+2019-09-05 00:17:01.143517,0x3600006,18593,akshay@akshay-HP-Pavilion-Laptop-15-cc1xx: ~,gnome-terminal-,
+2019-09-05 00:18:01.214119,0x4400003,22771,Mozilla Firefox,firefox,
+2019-09-05 00:19:01.280666,0x4400003,22771,Mozilla Firefox,firefox,
+2019-09-05 00:20:01.373049,0x4400003,22771,Mozilla Firefox,firefox,
+2019-09-05 00:21:01.446719,0x2c0001a,9748,KJSCE Hack 2019 - Google Chrome,chrome,16350089
+2019-09-05 00:22:01.510722,0x2c0001a,9748,KJSCE Hack 2019 - Google Chrome,chrome,16350089
+2019-09-05 00:23:01.590954,0x2c0001a,9748,KJSCE Hack 2019 - Google Chrome,chrome,16350089
+2019-09-05 00:24:01.669069,0x2c0001a,9748,KJSCE Hack 2019 - Google Chrome,chrome,16350089
+2019-09-05 00:25:01.752958,0x2c0001a,9748,KJSCE Hack 2019 - Google Chrome,chrome,16350089
+2019-09-05 00:26:01.853302,0x2c0001a,9748,KJSCE Hack • Overview | Devfolio - Google Chrome,chrome,17361885
+2019-09-05 00:27:01.950146,0x2c0001a,9748,ShivamGoyal1899 (Shivam Goyal) - Google Chrome,chrome,17417419
+2019-09-05 00:28:02.020036,0x2c0001a,9748,Page not found · GitHub - Google Chrome,chrome,17488363
+2019-09-05 00:29:01.099358,0x2c0001a,9748,Page not found · GitHub - Google Chrome,chrome,17545085
+2019-09-05 00:30:01.177601,0x2c0001a,9748,KJSCE Hack • Review | Devfolio - Google Chrome,chrome,17603524
+2019-09-05 00:31:01.245032,0x3800001,19051,test.py - productivity - Visual Studio Code,code,16010224
+2019-09-05 00:32:01.332681,0x3800001,19051,test.py - productivity - Visual Studio Code,code,16010224
+2019-09-05 00:33:01.408024,0x3800001,19051,test.py - productivity - Visual Studio Code,code,16010224
+2019-09-05 00:34:01.486212,0x3800001,19051,test.py - productivity - Visual Studio Code,code,16010224
+2019-09-05 00:35:01.556709,0x3800001,19051,test.py - productivity - Visual Studio Code,code,16010224
+2019-09-05 00:36:01.644183,0x3800001,19051,test.py - productivity - Visual Studio Code,code,16010224
+2019-09-05 00:37:01.722390,0x3800001,19051,test.py - productivity - Visual Studio Code,code,16010224
+2019-09-05 00:38:01.795660,0x3800001,19051,test.py - productivity - Visual Studio Code,code,16010224
+2019-09-05 00:39:01.879574,0x3800001,19051,test.py - productivity - Visual Studio Code,code,16010224
+2019-09-05 00:40:01.954657,0x3800001,19051,test.py - productivity - Visual Studio Code,code,16010224
+2019-09-05 00:41:02.023269,0x3800001,19051,test.py - productivity - Visual Studio Code,code,16010224
+2019-09-05 00:42:01.119627,0x3800001,19051,test.py - productivity - Visual Studio Code,code,16010224
+2019-09-05 00:43:01.185418,0x3800001,19051,test.py - productivity - Visual Studio Code,code,16010224
+2019-09-05 00:44:01.281907,0x2c0001a,9748,New Tab - Google Chrome,chrome,18447486
+2019-09-05 00:45:04.575794,0x4400003,22771,Analytics - Mozilla Firefox,firefox,
+2019-09-05 00:46:01.834426,0x4400003,22771,Mozilla Firefox,firefox,
+2019-09-05 00:47:01.928843,0x4400003,22771,Mozilla Firefox,firefox,
+2019-09-05 00:48:02.022693,0x4400003,22771,Mozilla Firefox,firefox,
+2019-09-05 00:49:01.118618,0x4400003,22771,Mozilla Firefox,firefox,
+2019-09-05 00:50:01.214217,0x4400003,22771,Mozilla Firefox,firefox,
+2019-09-05 00:51:01.309826,0x3800001,19051,test.py - productivity - Visual Studio Code,code,16010224
+2019-09-05 00:52:01.403451,0x3800001,19051,test.py - productivity - Visual Studio Code,code,18927050
+2019-09-05 00:53:01.831124,0x3800001,19051,● index.html - productivity - Visual Studio Code,code,18988137
+2019-09-05 00:54:01.329918,0x3800001,19051,● index.html - productivity - Visual Studio Code,code,19045523
+2019-09-05 00:55:02.566179,0x2c0001a,9748,Tutorials · d3/d3 Wiki - Google Chrome,chrome,19104440
+2019-09-05 00:56:02.238018,0x2c0001a,9748,The D3 Graph Gallery – Simple charts made with d3.js - Google Chrome,chrome,19166192
+2019-09-05 00:57:01.666493,0x3800001,19051,index.html - productivity - Visual Studio Code,code,19227575
