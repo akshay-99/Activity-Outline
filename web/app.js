@@ -114,7 +114,7 @@ $(document).ready(function(){
 async function buildvisuals()
 {
     try{
-    colorsjson = await d3.json("colors.json");
+    colorsjson = json_data.colors_data;
     colorsloaded = true;
     }
     catch{
@@ -122,7 +122,7 @@ async function buildvisuals()
     }
 
     
-    d3.csv(json_data.csv_file).then(function(data) {
+        var data = json_data.csv_data;
         console.log(data);
         processed_data = []
         data.forEach(function(row)
@@ -148,7 +148,7 @@ async function buildvisuals()
         buildHeatMap(processed_data);
         loadnumeric();
     
-    });
+    
 
 }
 

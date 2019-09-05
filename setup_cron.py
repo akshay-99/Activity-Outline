@@ -7,7 +7,7 @@ def setup_cron():
     for job in user_cron.crons:
         if script_path in job.command:
             return False
-    # * * * * * env DISPLAY=:0 python3 /home/akshay/cs/productivity/Productivity-Repo$
+    
     command = f"env DISPLAY=:0 python3 {os.path.join(script_path, 'test.py')}"
     job = user_cron.new(command=command)
 

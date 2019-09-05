@@ -4,23 +4,32 @@ import shutil
 from datetime import datetime
 import json
 
+from utils import readcsv, readjson
+
+
 def generate_report(date):
     script_path = os.path.dirname(os.path.abspath(__file__))
+    csv_file = f'watch-{date}.csv'
 
-    if not os.path.exists( os.path.join(script_path, 'csv_data', f'watch-{date}.csv') ):
+    if not os.path.exists( os.path.join(script_path, 'csv_data', csv_file ) ):
         return False
 
-    shutil.copy2(os.path.join( script_path, 'csv_data', f'watch-{date}.csv'), os.path.join( script_path , 'web') )
+    shutil.copy2(os.path.join( script_path, 'csv_data', csv_file), os.path.join( script_path , 'web') )
 
     report_date = datetime.strptime(date, '%m-%d-%Y').strftime("%A %-d %B %Y")
     generation_date = datetime.now().strftime('%d %B %Y %H:%M')
-    csv_file = f'watch-{date}.csv'
+    
+
+    csv_data = readcsv(os.path.join(script_path, 'csv_data', csv_file ) )
+    colors_data = readjson(os.path.join(script_path, 'web', 'colors.json' ))
 
     json_data = json.dumps(
         {
             'report_date': report_date,
             'generation_date': generation_date,
-            'csv_file': csv_file
+            'csv_file': csv_file,
+            'csv_data': csv_data,
+            'colors_data': colors_data
         }
     )
 
@@ -29,7 +38,7 @@ def generate_report(date):
     with open(os.path.join(report_filename), 'w') as f:
         f.write(rendered)
 
-    return report_filename, f'report-{date}.html'
+    return report_filename
 
 def _render_template(json_data):
     
