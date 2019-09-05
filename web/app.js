@@ -98,6 +98,13 @@ $(document).ready(function(){
     processcount = {};
     colorsjson = {};
     colorsloaded = false;
+
+    json_data = $('#json_data').html();
+    json_data = JSON.parse(json_data);
+
+    $('#title').html(`<small>Report of</small> <b>${json_data.report_date}</b>`);
+    $('#generated').html(`<small>Generated on</small> <b>${json_data.generation_date}</b>`);
+
     buildvisuals();
 //console.log(processcount);
 
@@ -115,7 +122,7 @@ async function buildvisuals()
     }
 
     
-    d3.csv("watch4.csv").then(function(data) {
+    d3.csv(json_data.csv_file).then(function(data) {
         console.log(data);
         processed_data = []
         data.forEach(function(row)

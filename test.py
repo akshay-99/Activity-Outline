@@ -71,7 +71,7 @@ def append_row(filename, data):
     if not os.path.exists(filepath):
         with open(filepath, 'w') as f:
             csv_writer = csv.writer(f, delimiter=',')
-            csv_writer.writerow(['Date', 'xid', 'pid', 'title', 'cmd', 'usertime'])
+            csv_writer.writerow(['Date', 'xid', 'pid', 'title', 'process', 'timeactive'])
 
     with open(filepath, 'a') as f:
         csv_writer = csv.writer(f, delimiter=',')

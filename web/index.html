@@ -18,8 +18,12 @@
                  <div id="pieChart" style="margin: auto;"></div>
             </div>
             <div class="col l6 m12">
+                <div>
+                    <h4 id="title"></h4>
+                    <p id="generated"></p>
+                </div>
                 <div id="numeric">
-                    <table style="margin-top:100px;">
+                    <table style="margin-top:50px;">
                         <tr>
                             <th>
                                 Process
@@ -39,7 +43,7 @@
 
     </div>
 
-
+    <div style="display: none;" id="json_data">{{json_data}}</div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
