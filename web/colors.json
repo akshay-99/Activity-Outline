@@ -3,5 +3,6 @@
     "firefox": "orange",
     "code": "blue",
     "gedit": "grey",
-    "gnome-terminal-":"#111"
+    "gnome-terminal-":"#111",
+    "vlc": "red"
 }

@@ -41,8 +41,8 @@ def generate_report(date):
     return report_filename
 
 def _render_template(json_data):
-    
-    file_loader = FileSystemLoader('web')
+    script_path = os.path.dirname(os.path.abspath(__file__))
+    file_loader = FileSystemLoader(os.path.join(script_path, 'web'))
     env = Environment(
         loader=file_loader,
         trim_blocks=True,
