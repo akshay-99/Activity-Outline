@@ -1,0 +1,6 @@
+Click==7.0
+Jinja2==2.10.1
+python-crontab==2.3.8
+python-dateutil==2.8.0
+simplejson==3.16.0
+six==1.11.0
