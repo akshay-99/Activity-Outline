@@ -28,6 +28,7 @@
 import subprocess
 import csv
 import datetime
+import os
 
 def get_current_data():
     
@@ -54,12 +55,29 @@ def get_current_data():
     return data 
 
 def append_row(filename, data):
+    
     row = [data['date'], data['xid'], data['_NET_WM_PID(CARDINAL)'], data['_NET_WM_NAME(UTF8_STRING)'], data['cmd'], data.get('_NET_WM_USER_TIME(CARDINAL)', None)]
-    with open(filename, 'a') as f:
+    
+    today = datetime.datetime.now().strftime("%m-%d-%Y")
+    csv_dir_name = 'csv_data'
+    script_path = os.path.dirname(os.path.abspath(__file__))
+
+    print(script_path)
+
+    if not os.path.exists( os.path.join( script_path, csv_dir_name) ):
+        os.mkdir( os.path.join( script_path, csv_dir_name) )
+    filepath = os.path.join( script_path, csv_dir_name, f'{filename}-{today}.csv' )
+
+    if not os.path.exists(filepath):
+        with open(filepath, 'w') as f:
+            csv_writer = csv.writer(f, delimiter=',')
+            csv_writer.writerow(['Date', 'xid', 'pid', 'title', 'cmd', 'usertime'])
+
+    with open(filepath, 'a') as f:
         csv_writer = csv.writer(f, delimiter=',')
         csv_writer.writerow(row)
 
 if __name__ == '__main__':
     data = get_current_data()
-    append_row('watch.csv', data)
+    append_row('watch', data)
 
