@@ -62,8 +62,6 @@ def append_row(filename, data):
     csv_dir_name = 'csv_data'
     script_path = os.path.dirname(os.path.abspath(__file__))
 
-    print(script_path)
-
     if not os.path.exists( os.path.join( script_path, csv_dir_name) ):
         os.mkdir( os.path.join( script_path, csv_dir_name) )
     filepath = os.path.join( script_path, csv_dir_name, f'{filename}-{today}.csv' )

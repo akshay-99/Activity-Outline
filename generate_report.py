@@ -8,8 +8,7 @@ def generate_report(date):
     script_path = os.path.dirname(os.path.abspath(__file__))
 
     if not os.path.exists( os.path.join(script_path, 'csv_data', f'watch-{date}.csv') ):
-        print('No data for this date')
-        return
+        return False
 
     shutil.copy2(os.path.join( script_path, 'csv_data', f'watch-{date}.csv'), os.path.join( script_path , 'web') )
 
@@ -30,6 +29,8 @@ def generate_report(date):
     with open(os.path.join(report_filename), 'w') as f:
         f.write(rendered)
 
+    return report_filename, f'report-{date}.html'
+
 def _render_template(json_data):
     
     file_loader = FileSystemLoader('web')
@@ -43,5 +44,3 @@ def _render_template(json_data):
     template = env.get_template('index.html')
     
     return template.render(json_data=json_data)
-
-generate_report('09-05-2019')
