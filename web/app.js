@@ -322,5 +322,5 @@ function loadnumeric()
 
 function formattime(value)
 {
-    return `${Math.round(value/60)} hr ${value % 60} min`;
+    return `${Math.floor(value/60)} hr ${value % 60} min`;
 }
